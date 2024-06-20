@@ -1,0 +1,314 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.orange {
+  color: orange;
+}
+.orange:hover {
+  color: gold;
+  background: rgba(255, 255, 255, 0.1);
+  color: white !important;
+}
+
+.gold {
+  color: gold;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  gap: 1%;
+  justify-content: center;
+  align-items: space-evenly;
+  margin: auto auto;
+  height: 100vh;
+  width: 100%;
+}
+
+.inputF {
+  background: black;
+  color: white;
+}
+
+.inputF {
+  background: rgba(255, 255, 255, 0.051);
+  border-radius: 20px;
+  width: 100%;
+  height: 30%;
+}
+.inputF:hover {
+  color: gold;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.rows {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 13%;
+  width: 100%;
+}
+
+.items, button {
+  background: rgba(255, 255, 255, 0.051);
+  border-radius: 20px;
+  width: 100%;
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: orange !important;
+  font-size: 2rem;
+}
+.items:hover, button:hover {
+  color: gold;
+  background: rgba(255, 255, 255, 0.1);
+}
+.items:hover, button:hover {
+  cursor: grab;
+}
+.items:active, button:active {
+  cursor: grabbing;
+}
+
+.orange {
+  background-color: rgb(255, 165, 0);
+  color: white !important;
+}
+.orange:hover {
+  background: rgba(255, 165, 0, 0.4);
+}
+
+button {
+  border: 0;
+}
+
+.dark {
+  background-color: black;
+  color: white;
+}
+.dark body {
+  background-color: black;
+  color: white;
+}
+
+.light {
+  color: black;
+  background-color: white;
+}
+.light body {
+  color: black;
+  background-color: black;
+}
+.light footer .cal, .light footer p {
+  color: black;
+}
+.light .inputF {
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  justify-content: center;
+  height: 5%;
+  padding: 0 4%;
+}
+
+.brand {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+  color: gold;
+  font-size: 2.3rem;
+}
+.brand:hover {
+  color: red;
+}
+.brand .logo {
+  color: red;
+}
+.brand .logo:hover {
+  color: gold;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 26px;
+  font-size: 2rem;
+  padding: 0 15px;
+}
+.btns span:hover {
+  color: gold;
+  background: rgba(255, 255, 255, 0.1);
+  background: transparent;
+  color: red !important;
+}
+
+main, footer {
+  width: 100%;
+}
+
+main {
+  height: 86%;
+  width: 100%;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1%;
+  justify-content: center;
+  align-items: space-evenly;
+}
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 0;
+  overflow-x: auto;
+  overflow-y: none;
+  gap: 1%;
+  scrollbar-width: none;
+  height: 3%;
+}
+
+.cal {
+  background: rgba(255, 255, 255, 0.051);
+  border-radius: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  height: 80%;
+  min-width: 35%;
+  opacity: 0.2;
+}
+.cal:hover {
+  color: gold;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.orderF {
+  order: -1;
+}
+
+.orderL {
+  order: 1;
+}
+
+.inputF, .dynamicH, .outputF, .dynamicC {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.051);
+  border-radius: 20px;
+  width: 100%;
+}
+.inputF:hover, .dynamicH:hover, .outputF:hover, .dynamicC:hover {
+  color: gold;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.dynamicH {
+  height: 8%;
+}
+
+.dynamicC {
+  height: 78%;
+  border-radius: 0;
+}
+
+.inputF {
+  width: 100%;
+}
+.inputF p {
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 20%;
+  min-width: 20%;
+  text-align: center;
+}
+
+input, textarea {
+  padding: 5px 5px;
+  resize: none;
+  height: 100%;
+  background: transparent;
+  background: rgba(255, 255, 255, 0.051);
+  border-radius: 20px;
+  width: 100%;
+  border: 0;
+  outline: 0;
+  text-align: center;
+  vertical-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+input:hover, textarea:hover {
+  color: gold;
+  background: rgba(255, 255, 255, 0.1);
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+  text-align: center;
+  vertical-align: center;
+}
+input::placeholder, textarea::placeholder {
+  text-align: center;
+  vertical-align: center;
+}
+
+textarea {
+  width: 400px !important;
+}
+
+.btn {
+  background: rgba(255, 255, 255, 0.051);
+  border-radius: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 80%;
+  width: 70%;
+  margin: auto;
+}
+.btn:hover {
+  color: gold;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.outputF {
+  display: flex;
+  flex-direction: column;
+  gap: 1%;
+  justify-content: center;
+  align-items: space-evenly;
+  text-align: center;
+  gap: 10px;
+  width: 100%;
+}
+.outputF .btn {
+  width: 30%;
+}
+.outputF p {
+  width: 100%;
+}/*# sourceMappingURL=index.css.map */

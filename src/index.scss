@@ -1,0 +1,253 @@
+
+  *{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    // color: white ;//remove lster just for styling
+  }
+  
+  @mixin flexrow{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  @mixin flexcol{
+    display: flex;
+    flex-direction: column;
+    gap: 1%;
+    justify-content: center;
+    align-items: space-evenly;
+  }
+  @mixin hover{
+    color: gold;
+    background : rgba(255,255,255,0.1);
+  }
+  
+  @mixin blurry{
+    background: rgba(255,255,255,0.051);
+    border-radius: 20px;
+    width: 100%;
+    &:hover{
+      @include hover;
+    }
+  }
+  .orange{
+    color: orange;
+     &:hover{
+      @include hover;
+       color: white !important;
+    }
+  }
+  .gold{
+    color: gold;
+  }
+ 
+  .App{
+    // background: white;
+    @include flexcol;
+    margin: auto auto;
+    height:100vh;
+    width: 100%;
+    // border: 1px solid black;
+  }
+
+  .inputF{
+    background: black;
+    color: white;
+  }
+  .inputF{
+    @include blurry;
+    height: 30%;
+  }
+  .rows{
+    @include flexrow;
+    justify-content: center;
+  gap: 10px;
+    height: 13%;
+    // gap: 1%;
+    width: 100%;
+  }
+  
+  .items{
+    @include blurry;
+    height:75px;
+    width: 75px;
+    border-radius: 50%;
+    @include flexrow;
+    color: orange !important;
+    font-size: 2rem;
+    &:hover{
+      cursor: grab;
+    }
+    &:active{
+      cursor: grabbing;
+    }
+  }
+  .orange{
+    background-color : 	rgba(255,165,0, 1)	;
+    color: white !important;
+    &:hover{
+      background : rgba(255,165,0 , 0.4);
+    }
+  }
+  button{
+    @extend .items;
+    border: 0;
+  }
+  .dark{
+background-color: black;
+color: white;
+body{
+  background-color: black;
+  color:white;
+}
+  }
+  .light{
+    color: black;
+    background-color: white;
+  body{
+    color: black;
+    background-color: black;
+}
+footer{
+  .cal, p {
+    color: black;
+  }
+}
+.inputF{
+  border: 1px solid black;
+  border-radius: 20px;
+}
+}
+  header{
+    // @include blurry;
+    @include flexrow;
+    justify-content: center;
+    height: 5%;
+    padding: 0 4%;
+  }
+  .brand{
+    @include flexrow;
+  gap:10px; 
+  color:gold;
+  &:hover{
+    color: red;
+  }
+  font-size: 2.3rem;  
+  .logo{
+    color: red;
+    &:hover{
+      color: gold;
+    }
+  }
+  }
+  .btns{
+    @include flexrow;
+    gap: 26px;
+    font-size: 2rem;
+    padding: 0 15px;
+    span{ &:hover{
+      @include hover;
+       background: transparent;
+       color: red !important;
+      }
+    }
+  }
+  main, footer{
+    // @include blurry;
+    width: 100%;
+  }
+  main{
+    height: 86%;
+    width: 100%;
+    font-size: 2rem;
+    @include flexcol;
+  }
+  footer{
+    @include flexrow;
+     border-radius: 0;
+    overflow-x: auto;
+    overflow-y: none;
+    gap: 1%;
+    scrollbar-width: none;
+    height: 3%;
+  }
+  .cal{
+   @include blurry;
+    @include flexrow;
+    justify-content: center;
+    gap: 4px;
+  height: 80%;
+    min-width: 35%;
+    opacity: 0.2;
+  }
+  .orderF{
+    order: -1;
+  }
+  .orderL{
+    order: 1;
+  }
+  .inputF, .dynamicH , .outputF, .dynamicC{
+    @include flexrow;
+    @include blurry;
+  }
+
+  .dynamicH {
+    height: 8%;
+  }
+  .dynamicC{
+    height: 78%;
+    border-radius: 0;
+  }
+  .inputF{
+    width: 100%;
+    p{
+      height: 100%;
+      @include flexrow;
+      // @include blurry;
+      width: 20%;
+      min-width: 20%;
+      text-align: center;
+    }
+  }
+  input, textarea{
+    padding: 5px 5px;
+    resize:none;
+    height: 100%;
+    background: transparent;
+    @include blurry;
+    border:0;
+    outline:0;
+    text-align: center;
+    vertical-align: center;
+    @include flexrow;
+    justify-content:center;
+    font-size: 2rem;;
+
+    &::placeholder{
+      text-align: center;
+      vertical-align: center;
+    }
+  }
+  textarea{
+    width: 400px !important;
+  }
+  .btn{
+    @include blurry;
+    @include flexrow;
+    height: 80%;
+    width: 70%;
+    margin: auto;
+  }
+  .outputF{
+    @include flexcol;
+    text-align: center;
+    gap: 10px;
+    width: 100%;
+    .btn{
+      width: 30%;
+    }
+    p{
+      width: 100%;
+    }
+  }
