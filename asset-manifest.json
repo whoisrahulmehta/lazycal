@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/lazycal/static/css/main.ba30c013.css",
+    "main.js": "/lazycal/static/js/main.fc4e6171.js",
+    "static/js/453.eeec7204.chunk.js": "/lazycal/static/js/453.eeec7204.chunk.js",
+    "index.html": "/lazycal/index.html",
+    "main.ba30c013.css.map": "/lazycal/static/css/main.ba30c013.css.map",
+    "main.fc4e6171.js.map": "/lazycal/static/js/main.fc4e6171.js.map",
+    "453.eeec7204.chunk.js.map": "/lazycal/static/js/453.eeec7204.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ba30c013.css",
+    "static/js/main.fc4e6171.js"
+  ]
+}
